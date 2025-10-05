@@ -1,6 +1,6 @@
 html, body {
     box-sizing: border-box;
-    border: 1px solid black;
+     
     height: 100%;
     width: 100%;
     margin: 0;
@@ -25,13 +25,13 @@ html, body {
 
 #docTitle{
     font-size: 1.7rem;
-    /* border: 1px solid black; */
+     
     width: 25%;
 }
 
 #totalPages{
     font-size: 1.7rem;
-    /* border: 1px solid black; */
+     
     width: 15%;
 }
 
@@ -59,7 +59,7 @@ html, body {
 
 #content{
     box-sizing: border-box;
-    /* border: 1px solid black; */
+     
     width: 100%;
     height: 90%;
     display: flex;
@@ -126,7 +126,7 @@ html, body {
 
 #pageContainer{
     box-sizing: border-box;
-    /* border: 1px solid black; */
+     
     background-color: #e2e5e8;
     height: 100%;
     width: 50%;
@@ -163,7 +163,7 @@ html, body {
     top: 90vh;
     z-index: 100;
     left: 40vw;
-    /* border: 1px solid black; */
+     
     background-color: rgba(255, 255, 255, 0.514);
     padding: 20px;
     border-radius: 20px;
@@ -217,14 +217,14 @@ html, body {
     width: auto;
     height: 80%;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+     
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .noteDiv{
-    /* border: 1px solid black; */
+     
     margin-top: 0px;
     width: 90%;
     height: auto;
@@ -240,7 +240,7 @@ html, body {
 }
 
 .noteSpan{
-    /* border: 1px solid black; */
+     
     padding-left: 5px;
     padding-top: 5px;
     height: 90%;
@@ -270,7 +270,7 @@ html, body {
 }
 
 #addNoteSection{
-    /* border: 1px solid black; */
+     
     display: flex;
     flex-direction: column;
     justify-content:left;
@@ -283,13 +283,13 @@ html, body {
 
 #addNoteTitle{
     font-size: 20px;
-    /* border: 1px solid black; */
+     
     margin-left: 30px;
 }
 #addNoteSect{
     width: 100%;
     height: 90%;
-    /* border: 1px solid black; */
+     
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -298,7 +298,6 @@ html, body {
 }
 
 #noteText{
-    /* border: 1px solid grey; */
     background-color: rgb(192, 192, 240);
     border-radius: 20px;
     border: none;
@@ -319,7 +318,7 @@ html, body {
 #addNoteBut{
     border: none;
     background-color: rgb(101, 101, 172);
-    /* border: 1px solid black; */
+     
     padding: 5px;
     border-radius: 8px;
     color: white;
@@ -474,7 +473,6 @@ html, body {
 }
 
 #fileLabel{
-    /* this is input file label */
     font-size: 1.4rem;
     padding: 8px 35px 8px 35px ;
     border-radius: 13px;
@@ -483,13 +481,13 @@ html, body {
 
 #docTitle{
     font-size: 1.45rem;
-    /* border: 1px solid black; */
+     
     width: 23%;
 }
 
 #totalPages{
     font-size: 1.45rem;
-    /* border: 1px solid black; */
+     
     width: 13%;
 }
 
@@ -498,7 +496,6 @@ html, body {
     width: 7.25%;
     font-size: 1.45rem;
     padding: 0.5%;
-    /* border: 1px solid black;     */
     text-align: center;
 }
 
@@ -516,7 +513,6 @@ html, body {
 
 
 
-/* //////////////////// */
 @media (max-width: 1200px) {
   #bookmarkSymbol{
     top: 15vh;
@@ -585,7 +581,6 @@ html, body {
 }
 
 #fileLabel{
-    /* this is input file label */
     font-size: 1.1rem;
     padding: 5px 20px 5px 20px ;
     border-radius: 11px;
@@ -593,13 +588,13 @@ html, body {
 
 #docTitle{
     font-size: 1rem;
-    /* border: 1px solid black; */
+     
     width: 23%;
 }
 
 #totalPages{
     font-size: 1rem;
-    /* border: 1px solid black; */
+     
     width: 13%;
 }
 
@@ -608,7 +603,6 @@ html, body {
     width: 7.2%;
     font-size: 1rem;
     padding: 0.2%;
-    /* border: 1px solid black;     */
 }
 
 .canvasElement{
@@ -624,7 +618,6 @@ html, body {
 }
 
 }
-/* /////////////////////////////// */
 
 
 
@@ -635,7 +628,6 @@ html, body {
 
     #header{
     box-sizing: border-box;
-    /* border: 2px solid black; */
     height: 10%;
     color: white    ;
     display: flex;
@@ -703,7 +695,6 @@ html, body {
 }
 
 #fileLabel{
-    /* this is input file label */
     font-size: 0.6rem;
     padding: 3px 10px 3px 10px ;
     border-radius: 8px;
@@ -712,13 +703,13 @@ html, body {
 
 #docTitle{
     font-size: 0.6rem;
-    /* border: 1px solid black; */
+     
     width: 23%;
 }
 
 #totalPages{
     font-size: 0.6rem;
-    /* border: 1px solid black; */
+     
     width: 13%;
     padding: 0px;
 }
@@ -728,7 +719,6 @@ html, body {
     width: 7.2%;
     font-size: 0.6rem;
     padding: 0.2%;
-    /* border: 1px solid black;     */
 }
 .canvasElement{
     width: 75%;         
@@ -807,7 +797,7 @@ html, body {
     gap: 10px;
     top: 90vh;
     left: 35vw;
-    /* border: 1px solid black; */
+     
     padding: 10px;
     border-radius: 18px;
     }
@@ -818,7 +808,7 @@ html, body {
     }
 
 .noteDiv{
-    /* border: 1px solid black; */
+     
     width: 90%;
     height: auto;
     min-height: 50px;
@@ -827,7 +817,7 @@ html, body {
 }
 
 .noteSpan{
-    /* border: 1px solid black; */
+     
     padding-left: 5px;
     padding-top: 5px;
     height: 90%;
@@ -861,7 +851,6 @@ html, body {
         width: 40%;   
         display: flex;
         height: 90%;
-        z-index: 10;     /* On top of everything */
         border: 1px solid lightgrey;
         border-radius: 10px;
         backdrop-filter: blur(1px);
@@ -872,7 +861,7 @@ html, body {
 #addNoteBut{
     border: none;
     background-color: rgb(101, 101, 172);
-    /* border: 1px solid black; */
+     
     padding: 2px;
     font-size: 7px;
     border-radius: 4px;
@@ -892,14 +881,14 @@ html, body {
     font-size: 14px;
     margin-top: 5px;
     color: rgb(27, 27, 81);
-    /* border: 1px solid black; */
+     
     margin-left: 10px;
     }
 
     #addNoteSect{
     width: 100%;
     height: 90%;
-    /* border: 1px solid black; */
+     
 }
 
     #noteText{
