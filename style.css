@@ -1,0 +1,903 @@
+html, body {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#icon{
+   font-size: 2.2rem;
+   padding-left: 1%;
+}
+
+#fileLabel{
+    /* this is input file label */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px 40px 10px 40px ;
+    border-radius: 15px;
+    background-color: #00B0A7;
+    border: 3px dashed  white;
+}
+
+#docTitle{
+    font-size: 1.7rem;
+    /* border: 1px solid black; */
+    width: 25%;
+}
+
+#totalPages{
+    font-size: 1.7rem;
+    /* border: 1px solid black; */
+    width: 15%;
+}
+
+
+#pageMatrics{
+    width: 7.5%;
+    font-size: 1.7rem;
+    padding: 0.5%;
+    /* border: 1px solid black;     */
+    text-align: center;
+}
+
+#header{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    height: 10%;
+    color: white    ;
+    display: flex;
+    background-color: #2f3f76;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#content{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#bookmarkDesc{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+#bookmarkTitle{
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+#bookmarkMsg{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+#bookmarkLine{
+    width: 250px;
+}
+
+.bookmarkButton{
+    width: 200px;
+    height: 50px;
+    background-color: #e3e8ec;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: rgb(96, 42, 29);
+    font-weight: 600;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#bookmarkContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#bookmarkSection{
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+}
+
+#bookmarkSection {
+    display: block;
+}
+
+#bookmarkDropdown {
+    display: none;
+}
+
+
+#pageContainer{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    background-color: #e2e5e8;
+    height: 100%;
+    width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    gap: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.canvasElement{
+    width: 50%;         
+    height: auto;       
+    display: block;
+    margin-bottom: 15px;
+    border: 4px solid lightgray;
+}
+
+#precisePage{
+    width: 40px;
+    text-align: center;
+}
+
+#navigationSection{
+    display: flex;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    top: 90vh;
+    z-index: 100;
+    left: 40vw;
+    /* border: 1px solid black; */
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#navigationSection:hover{
+        background-color: rgba(255, 255, 255, 0.636);
+
+}
+
+#prevBut, #nextBut{
+    border: none;
+    background-color: #2f407646;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#prevBut:hover, #nextBut:hover{
+    background-color: #2f407690;
+}
+
+#precisePage{
+    border: none;
+    background-color: none;
+    font-size: 15px;
+}
+
+#noteDesc{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#noteTitle{
+    padding-left: 20px;
+    font-size: 30px;    
+}
+#noteMsg{
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+#noteLine{
+        margin-top: 20px;
+        width: 400px;
+
+}
+#notesContainer{
+    width: auto;
+    height: 80%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noteDiv{
+    /* border: 1px solid black; */
+    margin-top: 0px;
+    width: 90%;
+    height: auto;
+    min-height: 50px;
+    display: flex;
+    border-radius: 10px;
+    flex: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: start;
+    background-color: #bacbd672;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.noteSpan{
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 90%;
+    width: 90%;
+}
+
+.noteBut{
+    margin-top: 10px ;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+
+}
+.noteLine{
+    color:bisque;
+    width: 80%;
+}
+
+#noteSection{
+    height: 100%;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#addNoteSection{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: start;
+    
+    width: 100%;
+    height: 20%;
+}
+
+
+#addNoteTitle{
+    font-size: 20px;
+    /* border: 1px solid black; */
+    margin-left: 30px;
+}
+#addNoteSect{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#noteText{
+    /* border: 1px solid grey; */
+    background-color: rgb(192, 192, 240);
+    border-radius: 20px;
+    border: none;
+    color: rgb(50, 50, 63);
+    width: 70%;
+    padding: 5px;
+    height: 60%;
+}
+
+#noteText:hover{
+    border: 1px solid grey;
+}
+
+#noteText:active{
+    border: none;
+
+}
+#addNoteBut{
+    border: none;
+    background-color: rgb(101, 101, 172);
+    /* border: 1px solid black; */
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+
+#bookmarkSymbol{
+    position: absolute;
+    top: 15vh;
+    left: 55vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.409);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bookmarkDropdown{
+    position: absolute;
+    top: 22vh;
+    left: 90vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.409);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 2x;
+    cursor: pointer;
+}
+
+#fullScreen{
+    position: absolute;
+    z-index: 1000;
+    top: 10vh;
+    right:0vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.409);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+#bookmarkDropdown:hover{
+    background-color: white;
+}
+
+#bookmarkDropdown:active{
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+#bookmarkSymbol:hover{
+    background-color: white;
+}
+#bookmarkSymbol:active{
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#fullScreen:hover{
+    background-color: white;
+}
+
+#fullScreen:active{
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#showNoteBut{
+    display: none;
+}
+
+#showNoteBut:hover{
+    background-color: white;
+}
+#showNoteBut:active{
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+#bookmarkDropdown{
+    display: none;
+}
+
+#fullScreen{
+    display: none;
+}
+
+
+
+@media (max-width: 1500px) {
+
+    #navigationSection{
+        top: 90vh;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 16px;
+        left: 37vw;
+    }
+
+    #prevBut, #nextBut{
+    font-size: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.bookmarkButton{
+    width: 180px;
+    height: 48px;
+    border-radius: 18px;
+    font-size: 15px;
+}
+
+#bookmarkDesc{
+    padding-top: 15px;
+    gap: 3px;
+}
+
+#bookmarkTitle{
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+#bookmarkMsg{
+    padding-left: 25px;
+    font-size: 13px;
+}
+
+#noteDesc{
+    padding-top: 15px;
+}
+
+#noteTitle{
+    padding-left: 15px;
+    font-size: 25px;
+}
+#noteMsg{
+    padding-left: 25px;
+    font-size: 13px;
+}
+
+#noteText{
+    border-radius: 18px;
+    width: 65%;
+    padding: 10px;
+    height: 55%;
+}
+
+#icon{
+   font-size: 2.2rem;
+   padding-left: 1%;
+}
+
+#fileLabel{
+    /* this is input file label */
+    font-size: 1.4rem;
+    padding: 8px 35px 8px 35px ;
+    border-radius: 13px;
+    
+}
+
+#docTitle{
+    font-size: 1.45rem;
+    /* border: 1px solid black; */
+    width: 23%;
+}
+
+#totalPages{
+    font-size: 1.45rem;
+    /* border: 1px solid black; */
+    width: 13%;
+}
+
+
+#pageMatrics{
+    width: 7.25%;
+    font-size: 1.45rem;
+    padding: 0.5%;
+    /* border: 1px solid black;     */
+    text-align: center;
+}
+
+.canvasElement{
+    width: 55%;         
+    margin-bottom: 13px;
+}
+#noteLine{
+        margin-top: 20px;
+        width: 300px;
+
+}
+
+}
+
+
+
+/* //////////////////// */
+@media (max-width: 1200px) {
+  #bookmarkSymbol{
+    top: 15vh;
+    left: 57vw;
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 8px; 
+  }
+  #navigationSection{
+        top: 90vh;
+        left: 35vw;
+        padding: 10px;
+    border-radius: 13px;
+    }
+
+    #prevBut, #nextBut{
+        font-size: 7px;
+        padding: 6px;
+        border-radius: 7px;
+}
+
+.bookmarkButton{
+    width: 125px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+#bookmarkDesc{
+    padding-top: 13px;
+    gap: 5px;
+}
+
+#bookmarkTitle{
+    padding-left: 12px;
+    font-size: 22px;
+}
+
+#bookmarkMsg{
+    padding-left: 25px;
+    font-size: 11px;
+}
+
+#noteDesc{
+    padding-top: 13px;
+}
+
+#noteTitle{
+    padding-left: 12px;
+    font-size: 22px;
+}
+#noteMsg{
+    padding-left: 25px;
+    font-size: 11px;
+}
+#noteText{
+    border-radius: 16px;
+    width: 60%;
+    padding: 10px;
+    height: 53%;
+}
+
+
+#icon{
+   font-size: 1.5rem;
+}
+
+#fileLabel{
+    /* this is input file label */
+    font-size: 1.1rem;
+    padding: 5px 20px 5px 20px ;
+    border-radius: 11px;
+}
+
+#docTitle{
+    font-size: 1rem;
+    /* border: 1px solid black; */
+    width: 23%;
+}
+
+#totalPages{
+    font-size: 1rem;
+    /* border: 1px solid black; */
+    width: 13%;
+}
+
+
+#pageMatrics{
+    width: 7.2%;
+    font-size: 1rem;
+    padding: 0.2%;
+    /* border: 1px solid black;     */
+}
+
+.canvasElement{
+    width: 65%;         
+    margin-bottom: 10px;
+}
+
+
+#noteLine{
+        margin-top: 20px;
+        width: 200px;
+
+}
+
+}
+/* /////////////////////////////// */
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+    #navigationSection{
+        top: 90vh;
+        left: 35vw;
+        padding: 8px;
+    border-radius: 10px;
+    }
+
+    #prevBut, #nextBut{
+        font-size:  5px;
+        padding: 4px;
+        border-radius: 5px;
+}
+
+    .bookmarkButton{
+    width: 90px;
+    height: 20px;
+    border-radius: 7px;
+    font-size: 10px;
+}
+
+#bookmarkDesc{
+    padding-top: 10px;
+    gap: 5px;
+}
+
+#bookmarkTitle{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#bookmarkMsg{
+    padding-left: 20px;
+    font-size: 10px;
+}
+
+#noteDesc{
+    padding-top: 10px;
+}
+
+#noteTitle{
+    padding-left: 10px;
+    font-size: 18px;
+}
+#noteMsg{
+    padding-left: 20px;
+    font-size: 10px;
+}
+
+#noteText{
+    border-radius: 14px;
+    width: 55%;
+    padding: 10px;
+    height: 50%;
+}
+#icon{
+   font-size: 1.3rem;
+}
+
+#fileLabel{
+    /* this is input file label */
+    font-size: 1rem;
+    padding: 3px 10px 3px 10px ;
+    border-radius: 11px;
+}
+
+#docTitle{
+    font-size: 0.8rem;
+    /* border: 1px solid black; */
+    width: 23%;
+}
+
+#totalPages{
+    font-size: 0.8rem;
+    /* border: 1px solid black; */
+    width: 13%;
+}
+
+
+#pageMatrics{
+    width: 7.2%;
+    font-size: 0.8rem;
+    padding: 0.2%;
+    /* border: 1px solid black;     */
+}
+.canvasElement{
+    width: 75%;         
+    margin-bottom: 8px;
+}
+#noteLine{
+        margin-top: 20px;
+        width: 150px;
+
+}
+
+
+
+
+}
+@media (max-width: 500px) {
+
+
+
+
+    #pageContainer{
+        width: 100%;
+    }
+
+    #bookmarkSymbol{
+    position: absolute;
+    top: 20vh;
+    left: 80vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.409);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;   
+    }
+
+
+    #bookmarkSection{
+        position: fixed;
+        display: none;
+        right: 10px;
+        top: 200px;
+        width: auto;   
+        height: auto;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        backdrop-filter: blur(1px);
+    }
+
+    
+    #bookmarkDesc{
+        display: none;
+    }
+    #bookmarkDropdown{
+        display: block;
+        position: fixed;
+        top: 22vh;
+        left: 90vw;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.409);
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 2x;
+        cursor: pointer;
+    }
+ 
+    .bookmarkButton{
+    width: 70px;
+    height: 20px;
+    border-radius: 7px;
+    font-size: 10px;
+} 
+    #canvasElement{
+       width: 100%;         
+    }
+
+    #navigationSection{
+    height: 20px;
+    gap: 10px;
+    top: 90vh;
+    left: 40vw;
+    /* border: 1px solid black; */
+    padding: 18px;
+    border-radius: 18px;
+    }
+
+    #noteSection.hideNote{
+        display: none;
+        z-index: 10;
+    }
+
+
+    #showNoteBut{
+        display: block;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.409);
+        font-size: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+
+    #fullScreen{
+        display: block;
+        position: fixed;
+        cursor: pointer;
+    }
+
+
+    #noteSection {
+        position: fixed;
+        width: 40%;   
+        height: 90%;
+        z-index: 10;     /* On top of everything */
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        backdrop-filter: blur(1px);
+    }
+
+    
+
+
+    #addNoteSection{
+        width: auto;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        background-color: #1bf5ead7;
+        height: 20%;
+        margin: 4px;
+    }
+
+    #addNoteTitle{
+    font-size: 17px;
+    margin-top: 5px;
+    color: rgb(27, 27, 81);
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    }
+
+    #addNoteSect{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+    #noteText{
+    border-radius: 10px;
+    width: 65%;
+    padding: 10px;
+    height: 60%;
+    }
+
+    #noteLine{
+        width: 120px;
+        }
+
+#pageContainer.fullScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    padding: 10px;
+}
+
+.hideOnFullScreen {
+    display: none !important;
+}
+
+.fullScreenCanvas {
+        width: 95%;     
+        height: auto; 
+        margin-bottom: 10px;
+        border: 2px solid lightgray;
+ }
+
+}

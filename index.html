@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainversion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <span id="icon">PDF Viewer</span>
+        <div id="inputFile">
+            <input type="file" id="fileField" hidden>
+            <label for="fileField" id="fileLabel"><i class="fa-solid fa-upload"></i>  Upload
+        </label>
+        </div>
+        <div id="docTitle">Title: "File Missing"</div>
+        <div id="totalPages">Total Pages: '0'</div>
+        <div id="pageMatrics">
+            Page: <span id="currentPage">0</span>/<span id="totalPages1">0</span>
+        </div>
+    </div>
+    
+    <button onclick="addBookmark()" id="bookmarkSymbol"><i class="fa-regular fa-bookmark"></i></button>
+
+    <button onclick="bookmarkDropdown()" id="bookmarkDropdown" class="bookmarkDropdown"><i class="fa-solid fa-caret-down"></i></button>
+
+    <button onclick="fullScreen()" id="fullScreen"><i class="fa-solid fa-expand"></i></i></button>
+
+    <button onclick="NoteDialogBox()" id="showNoteBut"><i class="fa-regular fa-note-sticky"></i></button>
+    <div id="content">
+        
+    <div id="bookmarkSection">
+        <div id="bookmarkDesc">
+            <span id="bookmarkTitle">Bookmarks</span>    
+            <span id="bookmarkMsg">Click bookmark symbol to add page to bookmarks</span>
+            <hr id="bookmarkLine">
+        </div>
+        
+
+        <div id="bookmarkContainer">
+
+        </div>
+    </div>
+
+    <div id="pageContainer">
+    </div>
+
+    <div id="navigationSection">
+            <button onclick="prev()" id="prevBut"><i class="fa-solid fa-less-than"></i></button>
+            <input type="number" id="precisePage">
+            <button onclick="next()" id="nextBut"><i class="fa-solid fa-greater-than"></i></button>
+    </div>
+
+
+    <div id="noteSection" class="hideNote">
+            <div id="noteDesc">
+                <span id="noteTitle">NOTEs</span>
+                <span id="noteMsg">Type your note below and save it.</span>
+                <hr id="noteLine">
+            </div>
+
+            <div id="notesContainer">
+            
+            </div>
+            <div id="addNoteSection">
+                <span id="addNoteTitle">Add Note:</span>
+                <div id="addNoteSect">
+                    <textarea id="noteText"></textarea>
+                    <button id="addNoteBut" onclick="addNote()"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js" integrity="sha512-g4FwCPWM/fZB1Eie86ZwKjOP+yBIxSBM/b2gQAiSVqCgkyvZ0XxYPDEcN2qqaKKEvK6a05+IPL1raO96RrhYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="mainversion.js"></script>
+</body>
+</html>
