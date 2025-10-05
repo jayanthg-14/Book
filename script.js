@@ -194,6 +194,7 @@ function addNote(){
     updateDocInfo(); 
     deleteNotes();       
     createNotes();
+    noteText.value = "";
 }
 
 
