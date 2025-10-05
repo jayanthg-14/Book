@@ -8,7 +8,7 @@ html, body {
 }
 
 #icon{
-   font-size: 2.2rem;
+   font-size: 2.rem;
    padding-left: 1%;
 }
 
@@ -237,8 +237,6 @@ html, body {
     align-items: start;
     background-color: #bacbd672;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .noteSpan{
@@ -635,6 +633,17 @@ html, body {
 
 @media (max-width: 700px) {
 
+    #header{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    height: 10%;
+    color: white    ;
+    display: flex;
+    background-color: #2f3f76;
+    gap: 1px;
+    align-items: center;
+}
+
     #navigationSection{
         top: 90vh;
         left: 35vw;
@@ -676,7 +685,7 @@ html, body {
 
 #noteTitle{
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 13px;
 }
 #noteMsg{
     padding-left: 20px;
@@ -690,32 +699,34 @@ html, body {
     height: 50%;
 }
 #icon{
-   font-size: 1.3rem;
+   font-size: 0.8rem;
 }
 
 #fileLabel{
     /* this is input file label */
-    font-size: 1rem;
+    font-size: 0.6rem;
     padding: 3px 10px 3px 10px ;
-    border-radius: 11px;
+    border-radius: 8px;
+    border: 2px dashed white;
 }
 
 #docTitle{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     /* border: 1px solid black; */
     width: 23%;
 }
 
 #totalPages{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     /* border: 1px solid black; */
     width: 13%;
+    padding: 0px;
 }
 
 
 #pageMatrics{
     width: 7.2%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 0.2%;
     /* border: 1px solid black;     */
 }
@@ -735,9 +746,6 @@ html, body {
 }
 @media (max-width: 500px) {
 
-
-
-
     #pageContainer{
         width: 100%;
     }
@@ -748,7 +756,7 @@ html, body {
     left: 80vw;
     border: none;
     background-color: rgba(255, 255, 255, 0.409);
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 10px;   
     }
@@ -769,15 +777,16 @@ html, body {
     
     #bookmarkDesc{
         display: none;
-    }
+}
+
     #bookmarkDropdown{
         display: block;
         position: fixed;
         top: 22vh;
-        left: 90vw;
+        left: 92vw;
         border: none;
         background-color: rgba(255, 255, 255, 0.409);
-        font-size: 10px;
+        font-size: 6px;
         padding: 5px;
         border-radius: 2x;
         cursor: pointer;
@@ -797,23 +806,39 @@ html, body {
     height: 20px;
     gap: 10px;
     top: 90vh;
-    left: 40vw;
+    left: 35vw;
     /* border: 1px solid black; */
-    padding: 18px;
+    padding: 10px;
     border-radius: 18px;
     }
-
+    
     #noteSection.hideNote{
         display: none;
         z-index: 10;
     }
 
+.noteDiv{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    min-height: 50px;
+    border-radius: 10px;
+    gap: 10px;
+}
 
+.noteSpan{
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 90%;
+    font-size: 10px;
+    width: 90%;
+}
     #showNoteBut{
         display: block;
         position: fixed;
-        bottom: 40px;
-        right: 40px;
+        bottom: 8vw;
+        right: 0vw;
         background: none;
         border: none;
         cursor: pointer;
@@ -834,6 +859,7 @@ html, body {
     #noteSection {
         position: fixed;
         width: 40%;   
+        display: flex;
         height: 90%;
         z-index: 10;     /* On top of everything */
         border: 1px solid lightgrey;
@@ -843,6 +869,15 @@ html, body {
 
     
 
+#addNoteBut{
+    border: none;
+    background-color: rgb(101, 101, 172);
+    /* border: 1px solid black; */
+    padding: 2px;
+    font-size: 7px;
+    border-radius: 4px;
+    color: white;
+}
 
     #addNoteSection{
         width: auto;
@@ -854,7 +889,7 @@ html, body {
     }
 
     #addNoteTitle{
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 5px;
     color: rgb(27, 27, 81);
     /* border: 1px solid black; */
@@ -871,6 +906,7 @@ html, body {
     border-radius: 10px;
     width: 65%;
     padding: 10px;
+    font-size: 10px;
     height: 60%;
     }
 

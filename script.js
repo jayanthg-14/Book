@@ -79,7 +79,7 @@ function fullScreen(){
     headerEle.classList.toggle("hideOnFullScreen")
     bookmarkBut.classList.toggle("hideOnFullScreen")
     bookmarkDropdown.classList.toggle("hideOnFullScreen")
-    noteBut.classList.toggle("hideOnFullScreen")
+    
 
     canvasEles.forEach((element)=>{
         element.classList.toggle("fullScreenCanvas")
@@ -89,11 +89,14 @@ function fullScreen(){
         fullScreenBut.innerHTML = `<i class="fa-solid fa-compress"></i>`
         fullScreenBut.style.top = "0vh";
         fullScreenBut.style.right = "0vw";
+        noteBut.style.right= "0vw";
+
     }
     else{
         fullScreenBut.innerHTML = `<i class="fa-solid fa-expand"></i>`; 
         fullScreenBut.style.top = "10vh";
         fullScreenBut.style.right = "0vw";
+        noteBut.style.right = "0vw"
     }
 
 }
